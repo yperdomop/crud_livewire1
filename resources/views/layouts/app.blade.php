@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('../css/app.css') }}" rel="stylesheet">
 	 @livewireStyles
 </head>
 <body>
@@ -36,6 +36,9 @@
 					@auth()
                     <ul class="navbar-nav mr-auto">
 						<!--Nav Bar Hooks - Do not delete!!-->
+						<li class="nav-item">
+                            <a href="{{ url('/cargos') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Cargos</a> 
+                        </li>
 						<li class="nav-item">
                             <a href="{{ url('/empleados') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Empleados</a> 
                         </li>
