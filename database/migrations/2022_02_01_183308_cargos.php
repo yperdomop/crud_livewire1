@@ -28,6 +28,7 @@ class Cargos extends Migration
         });
     }
 
+    
     /**
      * Reverse the migrations.
      *
